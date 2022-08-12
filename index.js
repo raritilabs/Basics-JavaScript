@@ -30,4 +30,29 @@ let numbers = [2,4,6,8,10];
  const sum = numbers.reduce((initialValue,currentValue) => initialValue+currentValue, 5 );
  console.log(sum);
 
-
+//spread() operator
+//combining array
+const arr1 = ["Parvi",21];
+const arr2 = [3,5,2001];
+const numbersCombined = [...arr1, ...arr2];
+console.log(numbersCombined);
+//
+function add(a, b, c) {
+    return a + b + c;
+  }
+  
+  const number = [3,5,7];
+  
+  console.log(add(...number));
+  //rest operator()
+  function product(...theArgs) {
+    let ptotal = 10;
+    for (const arg of theArgs) {
+      ptotal *= arg;
+    }
+    return ptotal;
+  }
+  
+  console.log(product(1,2,3));
+  console.log(product(2,2,2,2));
+  
