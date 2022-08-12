@@ -1,3 +1,4 @@
+
 //filter() function
 
 let array = [-23,-20,-17, -12, -5, 0, 1, 5, 12, 19, 20];
@@ -28,4 +29,5 @@ let numbers = [2,4,6,8,10];
  
  const sum = numbers.reduce((initialValue,currentValue) => initialValue+currentValue, 5 );
  console.log(sum);
+
 
