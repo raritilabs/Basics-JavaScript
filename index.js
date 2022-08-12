@@ -34,6 +34,34 @@ function diffrence(x, y, z, a, b) {
   return x - y -z-a-b;
 }
 
+<<<<<<< HEAD
+//spread() operator
+//combining array
+const arr1 = ["Parvi",21];
+const arr2 = [3,5,2001];
+const numbersCombined = [...arr1, ...arr2];
+console.log(numbersCombined);
+//
+function add(a, b, c) {
+    return a + b + c;
+  }
+  
+  const number = [3,5,7];
+  
+  console.log(add(...number));
+  //rest operator()
+  function product(...theArgs) {
+    let ptotal = 10;
+    for (const arg of theArgs) {
+      ptotal *= arg;
+    }
+    return ptotal;
+  }
+  
+  console.log(product(1,2,3));
+  console.log(product(2,2,2,2));
+  
+=======
 const array4 = [23, 2, 8, 5,9];
 
 console.log(diffrence(...array4));
@@ -49,3 +77,4 @@ function sum1(...theArgs) {
   
   console.log(sum1(11, 2, 3, 5));
 
+>>>>>>> 10ebe63677f8383b5ef557a11883b7f2a63f1409
