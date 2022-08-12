@@ -29,5 +29,23 @@ let numbers = [2,4,6,8,10];
  
  const sum = numbers.reduce((initialValue,currentValue) => initialValue+currentValue, 5 );
  console.log(sum);
+//spread operator
+function diffrence(x, y, z, a, b) {
+  return x - y -z-a-b;
+}
 
+const array4 = [23, 2, 8, 5,9];
+
+console.log(diffrence(...array4));
+
+//rest operator for using any number of parameters
+function sum1(...theArgs) {
+    let total = 0;
+    for (const arg of theArgs) {
+      total += arg;
+    }
+    return total;
+  }
+  
+  console.log(sum1(11, 2, 3, 5));
 
