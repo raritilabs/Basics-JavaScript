@@ -29,7 +29,12 @@ let numbers = [2,4,6,8,10];
  
  const sum = numbers.reduce((initialValue,currentValue) => initialValue+currentValue, 5 );
  console.log(sum);
+//spread operator
+function diffrence(x, y, z, a, b) {
+  return x - y -z-a-b;
+}
 
+<<<<<<< HEAD
 //spread() operator
 //combining array
 const arr1 = ["Parvi",21];
@@ -56,3 +61,20 @@ function add(a, b, c) {
   console.log(product(1,2,3));
   console.log(product(2,2,2,2));
   
+=======
+const array4 = [23, 2, 8, 5,9];
+
+console.log(diffrence(...array4));
+
+//rest operator for using any number of parameters
+function sum1(...theArgs) {
+    let total = 0;
+    for (const arg of theArgs) {
+      total += arg;
+    }
+    return total;
+  }
+  
+  console.log(sum1(11, 2, 3, 5));
+
+>>>>>>> 10ebe63677f8383b5ef557a11883b7f2a63f1409
