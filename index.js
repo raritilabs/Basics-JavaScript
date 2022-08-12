@@ -15,7 +15,6 @@ function func1(value)
 }
 
 console.log(positive_array1);
-const array1 = [1, 4, 9, 16];
-const map1 = array1.map(a => a % 2);
+const map1 = positive_array1.map(a => a % 2);
 
 console.log(map1);
